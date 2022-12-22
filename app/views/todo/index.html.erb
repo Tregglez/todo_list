@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div class="list-box">
+    <div class="title">
+      <h1>Todo List</h1>
+    </div>
+
+    <div class="line-break"></div>
+
+    <div class="list">
+      <ul>
+        <% @todos.each do |item| %>
+          <li id='item-style'>
+          </li>
+        <% end %>
+      </ul>
+
+      <div class="buttons">
+        <%= link_to 'New', new_todo_path %>
+      </div>
+
+    </div>
+  </div>
+
+</div>

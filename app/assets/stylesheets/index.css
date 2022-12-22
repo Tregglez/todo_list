@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.list-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4vmin 0 15vmin 0;
+  width: 40vmin;
+  border-radius: 9%;
+  background: var(--card-bg);
+}
+
+.title h1 {
+  display: flex;
+  justify-content: center;
+  background: var(--card-bg);
+  color: var(--text);
+}

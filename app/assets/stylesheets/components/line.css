@@ -1,0 +1,7 @@
+.line-break {
+  position: relative;
+  width: 5vmin;
+  height: 0.5vmin;
+  background: var(--card-accents);
+  /* top: 10vmin; */
+}

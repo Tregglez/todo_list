@@ -1,0 +1,7 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  background: var(--container-bg-1);
+  color: var(--card-bg);
+  margin-top: 4vmin;
+}
