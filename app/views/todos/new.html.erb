@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div class="list-box">
+    <div class="title">
+      <h1>Add a new Task</h1>
+    </div>
+
+    <div class="line-break"></div>
+
+    <div class="list">
+      <%= simple_form_for @todo do |f| %>
+        <%= f.input :title %>
+        <%= f.input :description %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+
+</div>

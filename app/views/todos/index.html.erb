@@ -8,12 +8,9 @@
     <div class="line-break"></div>
 
     <div class="list">
-      <ul>
-        <% @todos.each do |item| %>
-          <li id='item-style'>
-          </li>
-        <% end %>
-      </ul>
+      <% @todos.each do |item| %>
+        <li><%= item.title %> - <%= item.description %></li>
+      <% end %>
 
       <div class="buttons">
         <%= link_to 'New', new_todo_path %>
@@ -21,5 +18,4 @@
 
     </div>
   </div>
-
 </div>

@@ -1,0 +1,14 @@
+.list {
+  color: white;
+  background: var(--card-bg);
+}
+
+.list li {
+  background: var(--card-accents);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  list-style-type: none;
+  margin: 14px 0;
+  padding-left: 3vmin;
+}

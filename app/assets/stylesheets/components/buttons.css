@@ -1,7 +1,19 @@
 .buttons {
   display: flex;
   justify-content: center;
-  background: var(--container-bg-1);
-  color: var(--card-bg);
+  background: var(--card-bg);
   margin-top: 4vmin;
+}
+
+.buttons a {
+  color: var(--text);
+  background: var(--card-accents);
+  text-decoration: none;
+  width: 10vmin;
+  height: 3.5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 1.2rem;
 }
