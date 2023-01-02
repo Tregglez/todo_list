@@ -28,6 +28,11 @@ class TodosController < ApplicationController
     redirect_to todos_path, status: :see_other
   end
 
+  def submitreview
+    @project = set_todo
+    @project.update_attributes(completed: true)
+  end
+
   private
 
   def todo_params

@@ -1,0 +1,42 @@
+.form-list{
+  background: var(--card-bg);
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 5vmin;
+}
+
+input[type="text"], textarea {
+  background-color: #d1d1d1;
+  margin-bottom: 3vmin;
+}
+
+input[type="submit"] {
+  color: white;
+  cursor: pointer;
+}
+
+.new_todo {
+  background: var(--card-bg);
+}
+
+.edit_todo {
+  background: var(--card-bg);
+}
+
+.new_todo {
+  display: block;
+  text-align: center;
+}
+
+.todo_title, label {
+  background: var(--card-bg);
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.todo_description {
+  background: var(--card-bg);
+  text-align: center;
+}

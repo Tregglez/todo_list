@@ -9,7 +9,22 @@
 
     <div class="list">
       <% @todos.each do |item| %>
-        <li><%= item.title %> - <%= item.description %></li>
+        <li>
+          <span class='icon-beginning padding-icons'>
+            <i class="fa-regular fa-circle-check"></i>
+          <%= item.title %></span>
+
+          <span class='padding-small flex-movement'>- <%= item.description %> - <%= item.completed %>
+            <span class='padding-icons'><%= link_to edit_todo_path(item) do %>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                  <% end %>
+
+                  <%= link_to item, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} do %>
+                    <i class="fa-regular fa-trash-can"></i>
+                  <% end %>
+            </span>
+          </span>
+        </li>
       <% end %>
 
       <div class="buttons">
@@ -17,5 +32,7 @@
       </div>
 
     </div>
+    <div class="line-break"></div>
+
   </div>
 </div>

@@ -25,3 +25,8 @@
   background: var(--card-bg);
   color: var(--text);
 }
+
+.padding-small {
+  padding-left: 3vmin;
+  background: var(--card-accents);
+}

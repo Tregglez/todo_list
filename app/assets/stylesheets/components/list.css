@@ -1,6 +1,9 @@
 .list {
   color: white;
   background: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .list li {
@@ -11,4 +14,27 @@
   list-style-type: none;
   margin: 14px 0;
   padding-left: 3vmin;
+}
+
+.flex-movement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-beginning {
+  background: var(--card-accents);
+  margin: 0;
+  padding: 0;
+}
+
+.padding-icons {
+  background: var(--card-accents);
+}
+
+.padding-icons i {
+  background: var(--card-accents);
+}
+
+.padding-icons a {
+  background: var(--card-accents);
 }

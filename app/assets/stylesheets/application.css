@@ -1,7 +1,13 @@
+/* Importing files */
 @import url(./index.css);
 @import url(./components/line.css);
 @import url(./components/list.css);
+@import url(./components/form-list.css);
 @import url(./components/buttons.css);
+@import url(./components/container-groups.css);
+
+/* Importing Outside */
+@import 'font-awesome';
 
 /* Color Vairables */
 :root {
@@ -15,4 +21,10 @@
 * {
   margin: 0;
   background: var(--container-bg-1);
+}
+
+i {
+  color: white;
+  width: 30px;
+  height: 30px;
 }
