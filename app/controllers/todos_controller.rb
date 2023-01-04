@@ -12,7 +12,7 @@ class TodosController < ApplicationController
   def create
     @todo = Todo.new(todo_params)
     if @todo.save
-      redirect_to todos_path
+      redirect_to root_path
     else
       render :new, status: :unprocessable_entity
     end
@@ -20,12 +20,12 @@ class TodosController < ApplicationController
 
   def update
     @todo.update(todo_params)
-    redirect_to todos_path
+    redirect_to root_path
   end
 
   def destroy
     @todo.destroy
-    redirect_to todos_path, status: :see_other
+    redirect_to root_path, status: :see_other
   end
 
   private

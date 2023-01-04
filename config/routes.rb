@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :todos
+  root 'todos#index'
+  resources :todos, except: %i[index]
 end
