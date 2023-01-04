@@ -14,13 +14,13 @@
             <%# <i class="fa-regular fa-circle-check"></i> %>
           <%= item.title %></span>
 
-          <span class='padding-small flex-movement'>- <%= item.description %> - <%= item.completed %>
+          <span class='padding-small flex-movement'>- <%= item.description %>
             <span class='padding-icons'><%= link_to edit_todo_path(item) do %>
                     <i class="fa-regular fa-pen-to-square"></i>
                   <% end %>
 
-                  <%= link_to item, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} do %>
-                    <i class="fa-regular fa-trash-can"></i>
+                  <%= link_to item, data: {turbo_method: :delete } do %>
+                    <i class="fa-solid fa-check"></i>
                   <% end %>
 
             </span>
