@@ -11,7 +11,7 @@
       <% @todos.each do |item| %>
         <li>
           <span class='icon-beginning padding-icons'>
-            <i class="fa-regular fa-circle-check"></i>
+            <%# <i class="fa-regular fa-circle-check"></i> %>
           <%= item.title %></span>
 
           <span class='padding-small flex-movement'>- <%= item.description %> - <%= item.completed %>
@@ -22,6 +22,7 @@
                   <%= link_to item, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} do %>
                     <i class="fa-regular fa-trash-can"></i>
                   <% end %>
+
             </span>
           </span>
         </li>

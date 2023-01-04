@@ -16,11 +16,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.new_todo {
-  background: var(--card-bg);
-}
-
-.edit_todo {
+.new_todo, .edit_todo {
   background: var(--card-bg);
 }
 
